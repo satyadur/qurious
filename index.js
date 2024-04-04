@@ -1,3 +1,8 @@
+let bag=document.getElementById("count")
+console.log(bag);
+
+    bag.innerText=window.localStorage.getItem("a")
+
 let ii1=document.querySelector(".ii1")
 let ii2=document.querySelector(".ii2")
 let ii3=document.querySelector(".ii3")

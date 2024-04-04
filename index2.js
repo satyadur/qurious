@@ -31,56 +31,80 @@ let num=document.getElementsByClassName("num")
 console.log(num);
 let count2=document.getElementById("count")
 console.log(count2);
+count2.innerText=window.localStorage.getItem("a")
+
 let item=document.getElementById("items")
 console.log(item);
 let price=document.getElementById("price")
 console.log(price);
-refine.addEventListener("click",()=>{
+refine.addEventListener("click",(e)=>{
     console.log(refine.value);
     if(refine.value==1){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
-        price.value=`${item.value*80.00}.00`
+        price.value=`${item.value*80.00}.00` 
+        // window.localStorage.clar()  
+       window.localStorage.setItem("a",item.value)    
     }else if(refine.value==2){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+        // e.target.window.localStorage.setItem("a",item.value)   
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==3){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==4){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==5){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==6){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==8){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==9){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==10){
         item.value=count2.innerHTML
         count2.innerHTML=refine.value
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==0){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${0}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }else if(refine.value==7){
         count2.innerHTML=refine.value
         item.value=count2.innerHTML
         price.value=`${item.value*80.00}.00`
+       window.localStorage.setItem("a",item.value)    
+
     }
 })
-
